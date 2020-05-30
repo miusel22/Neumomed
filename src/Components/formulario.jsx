@@ -79,17 +79,20 @@ class formulario extends React.Component {
         <h3 className="text-white bg-info">VALORACIÓN</h3>
         <hr className="bg-info"></hr>
       </div>
-
+      <h3 className="text-info text-center mt-5">Diligencia el formulario y obtén tu valoración.</h3>
       <div className="container">
         <div className="row">
 
- <div className="col-12 col-md-6 col-sm-12 ">
+        
 
+ <div className="col-12 col-md-6 col-sm-12 ">
+ 
+<div className="col-md-4"></div>
 <img src={Neumobot} className="img-responsive  neumobot d-block mt-5 mb-5"/>
 </div>
 <div className="col-12 col-md-6 col-sm-12  mt-auto mb-auto ">
 
-<h3 className="text-info">Diligencia el formulario y obtén tu valoración.</h3>
+
 
 
 
@@ -143,15 +146,15 @@ class formulario extends React.Component {
                          
                             {v.seccion == e.valor && v.nombre!="Clasificación" ? (
                               <div class=" container form-group">
-                                <div className="ml-auto mr-auto col-md-7">
+                                <div className="ml-auto mr-auto ">
                                   <label
-                                    className="text-white col-4 col-md-8 text-left mr-10 label"
+                                    className="text-white col-4 col-md-8 text-left  label"
                                     for="validationCustom01"
                                   >
                                     {v.nombre}:
                                   </label>
                                   <input
-                                    className="text-align-center col-md-1"
+                                    className="text-align-center col-md-4"
                                     type="numero"
                                     name="nombres"
                                     placeholder={"Ingresa " + v.nombre+"..."}
@@ -170,9 +173,9 @@ class formulario extends React.Component {
                              {
                             v.seccion == e.valor && v.nombre=="Clasificación"?(
                               <>
-                              <div className="ml-auto mr-auto col-md-8">
+                              <div className="ml-auto mr-auto">
                               <label
-                                    className="text-white mx-sm-1"
+                                    className="text-white"
                                     for="validationCustom01"
                                   >
                                     {v.nombre}
