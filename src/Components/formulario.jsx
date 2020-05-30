@@ -136,12 +136,12 @@ class formulario extends React.Component {
                                           v.nombre != "Clasificación" ? ( //condición que nos ayuda a validar que se pinten solo las variables que corresponden a la sección,como con la variable clasificación pasa algo especial,la dejamos para pintar después
                                             <div className=" container form-group">
                                               <div className="">
-                                                <label
-                                                  className="text-white  text-left label"
+                                                <p
+                                                  className="text-white  text-left "
                                                   for="validationCustom01"
                                                 >
                                                   {v.nombre}:
-                                                </label>
+                                                </p>
                                                 <input
                                                   className="text-align-center col-md-6 col-sm-6"
                                                   type="numero"
@@ -165,12 +165,12 @@ class formulario extends React.Component {
                                           v.nombre == "Clasificación" ? ( //validamos  ahora que la variable sea clasificación para asignarle una lista desplegable con su respectivo objeto
                                             <>
                                               <div className="container">
-                                                <label
-                                                  className="text-white"
+                                                <p
+                                                  className="text-white text-left"
                                                   for="validationCustom01"
                                                 >
                                                   {v.nombre}
-                                                </label>
+                                                </p>
                                                 <select
                                                   className="form-control"
                                                   id="exampleFormControlSelect1"
