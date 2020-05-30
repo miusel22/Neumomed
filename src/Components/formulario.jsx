@@ -72,19 +72,16 @@ class formulario extends React.Component {
             <h3 className="text-info text-center mt-5">
               Diligencia el formulario y obtén tu valoración.
             </h3>
-            <div className="container align-items-center">
+            <div className="container">
               <div className="row align-items-center">
-                <div className="col-12 col-md-6 col-sm-12 content-center">
+                <div className="col-md-6 content-center mt-auto ml-auto mr-auto">
                   
                   <img
                     src={Neumobot}
                     className="img-responsive  neumobot d-block mt-5 mb-5"
                   />
-                    
-                  
-                 
                 </div>
-                <div className="col-12 col-md-6 col-sm-12  mt-auto mb-auto ">
+                <div className="col-md-6">
                   <form className="form text-aling-center">
                     <div className="form-row ">
                       {secc.map((
@@ -92,18 +89,18 @@ class formulario extends React.Component {
                         i //estamos pintando todas las secciones
                       ) => (
                         <>
-                          <div className="container  text-center bg-info">
+                          <div className="container text-center bg-info">
                             <h4 key={i}></h4>
 
                             <div
-                              class="panel-group"
+                              className="container panel-group"
                               id="accordion"
                               role="tablist"
                               aria-multiselectable="true"
                             >
                               <div class="panel panel-default text-center">
                                 <div class="panel-heading" role="tab" id="">
-                                  <h4 class="panel-title text-white">
+                                  <div class="panel-title text-white">
                                     <h3
                                       className="formulario"
                                       role="button text-white"
@@ -115,15 +112,15 @@ class formulario extends React.Component {
                                     >
                                       {e.nombre}
                                     </h3>
-                                  </h4>
+                                  </div>
                                 </div>
                                 <div
                                   id={"collapse" + e.valor} //para que nos funcione el acordeon,le asignamos un id
-                                  className="panel-collapse collapse in"
+                                  className="panel-collapse collapse"
                                   role="tabpanel"
                                   aria-labelledby="heading"
                                 >
-                                  <div className="panel-body align-item-center">
+                                  <div className="panel-body">
                                     {varia.map((
                                       v,
                                       i //pintamos las variables en los correspondientes bloques.
@@ -135,15 +132,15 @@ class formulario extends React.Component {
                                           {v.seccion == e.valor &&
                                           v.nombre != "Clasificación" ? ( //condición que nos ayuda a validar que se pinten solo las variables que corresponden a la sección,como con la variable clasificación pasa algo especial,la dejamos para pintar después
                                             <div className=" container form-group">
-                                              <div className="ml-auto mr-auto ">
+                                              <div className="">
                                                 <label
-                                                  className="text-white col-12  text-left  label"
+                                                  className="text-white  text-left col-6 label"
                                                   for="validationCustom01"
                                                 >
                                                   {v.nombre}:
                                                 </label>
                                                 <input
-                                                  className="text-align-center col-12 col-md-6 col-sm-6"
+                                                  className="text-align-center col-md-6 col-sm-6"
                                                   type="numero"
                                                   name="nombres"
                                                   placeholder={
@@ -164,15 +161,15 @@ class formulario extends React.Component {
                                           {v.seccion == e.valor &&
                                           v.nombre == "Clasificación" ? ( //validamos  ahora que la variable sea clasificación para asignarle una lista desplegable con su respectivo objeto
                                             <>
-                                              <div className="container ml-auto mr-auto">
+                                              <div className="container">
                                                 <label
-                                                  className="text-white label"
+                                                  className="text-white"
                                                   for="validationCustom01"
                                                 >
                                                   {v.nombre}
                                                 </label>
                                                 <select
-                                                  className="form-control sm label"
+                                                  className="form-control"
                                                   id="exampleFormControlSelect1"
                                                 >
                                                   <option>
