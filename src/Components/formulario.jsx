@@ -74,12 +74,15 @@ class formulario extends React.Component {
             </h3>
             <div className="container">
               <div className="row">
-                <div className="col-12 col-md-6 col-sm-12 ">
-                  <div className="col-md-4"></div>
+                <div className="col-12 col-md-6 col-sm-12 justify-content-center cont">
+                  
                   <img
                     src={Neumobot}
                     className="img-responsive  neumobot d-block mt-5 mb-5"
                   />
+                    
+                  
+                 
                 </div>
                 <div className="col-12 col-md-6 col-sm-12  mt-auto mb-auto ">
                   <form className="form text-aling-center">
@@ -116,11 +119,11 @@ class formulario extends React.Component {
                                 </div>
                                 <div
                                   id={"collapse" + e.valor} //para que nos funcione el acordeon,le asignamos un id
-                                  class="panel-collapse collapse in"
+                                  className="panel-collapse collapse in"
                                   role="tabpanel"
                                   aria-labelledby="heading"
                                 >
-                                  <div class="panel-body align-item-center">
+                                  <div className="panel-body align-item-center">
                                     {varia.map((
                                       v,
                                       i //pintamos las variables en los correspondientes bloques.
@@ -131,7 +134,7 @@ class formulario extends React.Component {
                                         <div>
                                           {v.seccion == e.valor &&
                                           v.nombre != "Clasificación" ? ( //condición que nos ayuda a validar que se pinten solo las variables que corresponden a la sección,como con la variable clasificación pasa algo especial,la dejamos para pintar después
-                                            <div class=" container form-group">
+                                            <div className=" container form-group">
                                               <div className="ml-auto mr-auto ">
                                                 <label
                                                   className="text-white col-12  text-left  label"
@@ -169,7 +172,7 @@ class formulario extends React.Component {
                                                   {v.nombre}
                                                 </label>
                                                 <select
-                                                  class="form-control sm label"
+                                                  className="form-control sm label"
                                                   id="exampleFormControlSelect1"
                                                 >
                                                   <option>
@@ -206,7 +209,7 @@ class formulario extends React.Component {
                     <div className="container text-center">
                       <button
                         type="button"
-                        class="btn form- control btn-success"
+                        className="btn form- control btn-success"
                       >
                         Obtener Valoración
                       </button>
