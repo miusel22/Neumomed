@@ -11,13 +11,6 @@ class formulario extends React.Component {
     this.state = { secciones: [], variables: [], variable8: [] }; //estados iniciales.
   }
 
-  boton() {
-    
-    var mensaje=document.getElementById("mensaje");
-    var mensaje2="Uno de nuestros especialistas pronto se pondrá en contacto contigo.";
-
-    mensaje.innerHTML = mensaje2;
-}
 
   componentDidMount() {
     fetch(
@@ -201,7 +194,7 @@ class formulario extends React.Component {
                     </div>
                     <br></br>
                     <div className="container text-center">
-                      <button type="button" class="btn form- control btn-success" onClick={this.boton}>
+                      <button type="button" class="btn form- control btn-success">
                         Obtener Valoración
                       </button>
                       <p className="text-info" id="mensaje"></p>
