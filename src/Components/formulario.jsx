@@ -63,7 +63,7 @@ class formulario extends React.Component {
       return (
         <>
           <Header></Header>
-          <div className="container-fluid ml-auto mr-auto text-align-center vh-100%">
+          <div className="container-fluid ml-auto mr-auto align-items-center vh-100%">
             <div className="container-fluid text-center bg-info">
               <h3 className="text-white bg-infomt-3 mt-2 valoracion">
                 VALORACIÓN
@@ -72,9 +72,9 @@ class formulario extends React.Component {
             <h3 className="text-info text-center mt-5">
               Diligencia el formulario y obtén tu valoración.
             </h3>
-            <div className="container">
-              <div className="row">
-                <div className="col-12 col-md-6 col-sm-12 justify-content-center cont">
+            <div className="container align-items-center">
+              <div className="row align-items-center">
+                <div className="col-12 col-md-6 col-sm-12 content-center">
                   
                   <img
                     src={Neumobot}
@@ -166,7 +166,7 @@ class formulario extends React.Component {
                                             <>
                                               <div className="container ml-auto mr-auto">
                                                 <label
-                                                  className="text-white"
+                                                  className="text-white label"
                                                   for="validationCustom01"
                                                 >
                                                   {v.nombre}
