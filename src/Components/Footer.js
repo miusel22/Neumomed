@@ -28,7 +28,7 @@ Edificio Salud y Servicios.</p>
   </div>
 
 </div>
-<p className="text-center footer text-white"><a href="https://neumomed.com/#/"/>Neumomed |Todos los derechos reservados 2020</p>
+<p className="text-center footer text-white"><a href="https://neumomed.com/#/"/>Neumomed | Todos los derechos reservados 2020</p>
 
 
 </footer>
