@@ -155,7 +155,7 @@ class formulario extends React.Component {
                                     {v.nombre}:
                                   </label>
                                   <input
-                                    className="text-align-center col-md-6 col-sm-6"
+                                    className="text-align-center col-12 col-md-6 col-sm-6"
                                     type="numero"
                                     name="nombres"
                                     placeholder={"Ingresa " + v.nombre+"..."}
