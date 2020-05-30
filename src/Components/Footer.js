@@ -6,7 +6,7 @@ function Footer() {
   return (
 
   <>
-  <footer class="footer py-1">
+  <footer class=" container-fluid footer py-1">
   
 <div className="row m-auto footerspace">
   <div className="col-12 col-md-3 col-sm-12  footer footerspace">

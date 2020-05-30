@@ -10,6 +10,15 @@ class formulario extends React.Component {
     super(props);
     this.state = { secciones: [], variables: [], variable8: [] }; //estados iniciales.
   }
+
+  boton() {
+    
+    var mensaje=document.getElementById("mensaje");
+    var mensaje2="Uno de nuestros especialistas pronto se pondrá en contacto contigo.";
+
+    mensaje.innerHTML = mensaje2;
+}
+
   componentDidMount() {
     fetch(
       "https://formularios-prueba-tecnica-6ihrk4y23q-ue.a.run.app/formularios/api/v3/prueba_tecnica" //petición de la api
@@ -25,6 +34,8 @@ class formulario extends React.Component {
         });
       });
   }
+
+
 
   render() {
     const secc = Object.values(this.state.secciones); //le asignamos un nuevo objeto de secciones con el estado
@@ -61,7 +72,7 @@ class formulario extends React.Component {
           <Header></Header>
           <div className="container-fluid ml-auto mr-auto text-align-center vh-100%">
             <div className="container-fluid text-center bg-info">
-              <h3 className="text-white bg-info">VALORACIÓN</h3>
+              <h3 className="text-white bg-info mt-3">VALORACIÓN</h3>
               <hr className="bg-info"></hr>
             </div>
             <h3 className="text-info text-center mt-5">
@@ -123,7 +134,7 @@ class formulario extends React.Component {
                                             <div class=" container form-group">
                                               <div className="ml-auto mr-auto ">
                                                 <label
-                                                  className="text-white col-12 col-md-8 col-sm-8 text-left  label"
+                                                  className="text-white col-12  text-left  label"
                                                   for="validationCustom01"
                                                 >
                                                   {v.nombre}:
@@ -138,7 +149,7 @@ class formulario extends React.Component {
                                                     "..."
                                                   }
                                                   className="form-control "
-                                                  value={this.state.nombres}
+                                                  value=""
                                                   id="validationCustom01"
                                                   required
                                                 ></input>
@@ -150,7 +161,7 @@ class formulario extends React.Component {
                                           {v.seccion == e.valor &&
                                           v.nombre == "Clasificación" ? ( //validamos  ahora que la variable sea clasificación para asignarle una lista desplegable con su respectivo objeto
                                             <>
-                                              <div className="ml-auto mr-auto">
+                                              <div className="container ml-auto mr-auto">
                                                 <label
                                                   className="text-white"
                                                   for="validationCustom01"
@@ -190,9 +201,10 @@ class formulario extends React.Component {
                     </div>
                     <br></br>
                     <div className="container text-center">
-                      <button type="submit" class="btn btn-success">
-                        {"Obtener Valoración"}
+                      <button type="button" class="btn form- control btn-success" onClick={this.boton}>
+                        Obtener Valoración
                       </button>
+                      <p className="text-info" id="mensaje"></p>
                     </div>
                   </form>
                 </div>

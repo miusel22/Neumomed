@@ -12,7 +12,7 @@ function servicios() {
 
 <div className="container bg-white mt-auto ml-auto mt-auto" >
 <div className="row bg-white" >
-<div className="col-12 col-md-4 col-sm-12 mt-auto ">
+<div className="col-12 col-md-4 col-sm-12 mt-4 ">
     <hr className="btn-dark hr"></hr>
 <h4 className="titulos">Programas</h4>
 <br></br>

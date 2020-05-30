@@ -8,7 +8,7 @@ class Router extends Component {
       return (
  <Switch>
    <Route exact path='/' component={Principal}/>
-   <Route exact path= '/formulario' component={Formulario} /> 
+   <Route path= '/formulario' component={Formulario} /> 
 
 </Switch>
       )
