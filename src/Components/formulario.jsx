@@ -63,7 +63,7 @@ class formulario extends React.Component {
       return (
         <>
           <Header></Header>
-          <div className="container-fluid ml-auto mr-auto align-items-center vh-100%">
+          <div className="container-fluid ml-auto mr-auto align-items-center">
             <div className="container-fluid text-center bg-info">
               <h3 className="text-white bg-infomt-3 mt-2 valoracion">
                 VALORACIÓN
@@ -75,14 +75,10 @@ class formulario extends React.Component {
             <div className="container">
               <div className="row align-items-center">
                 <div className="col-md-6 col-sm-12 content-center mt-auto ml-auto mr-auto">
-                  
                   <img
                     src={Neumobot}
                     className="img-responsive  neumobot d-block mt-5 mb-5"
                   />
-                    
-                  
-                 
                 </div>
                 <div className="col-md-6">
                   <form className="form text-aling-center">
@@ -207,13 +203,9 @@ class formulario extends React.Component {
                     </div>
                     <br></br>
                     <div className="container text-center">
-                      <button
-                        type="button"
-                        className="btn form- control btn-success"
-                      >
+                      <button type="button" className="btn boton btn-dark">
                         Obtener Valoración
                       </button>
-                      <p className="text-info" id="mensaje"></p>
                     </div>
                   </form>
                 </div>
@@ -233,7 +225,7 @@ class formulario extends React.Component {
               Cargando Formulario, por favor espera...
             </h3>
             <img
-              className="neumobot img-responsive mg-fluid"
+              className="neumobotcarga img-responsive mg-fluid"
               alt="Responsive image"
               src={NeumobotFeliz}
             ></img>

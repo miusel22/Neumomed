@@ -10,7 +10,7 @@ function info() {
       <section >
 
 
-        <div className="container-fluid  ml-auto mr-auto text-align-center vh-100%" >
+        <div className="container-fluid  ml-auto mr-auto text-align-center" >
 
           <div className="row seccion" >
 
