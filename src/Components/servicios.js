@@ -1,6 +1,6 @@
 
 import React from 'react';
-import imagen1 from '../img/_MG_5091.JPG'
+
 import "./style.css";
 
 function servicios() {
