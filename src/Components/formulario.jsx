@@ -74,12 +74,15 @@ class formulario extends React.Component {
             </h3>
             <div className="container">
               <div className="row align-items-center">
-                <div className="col-md-6 content-center mt-auto ml-auto mr-auto">
+                <div className="col-md-6 col-sm-12 content-center mt-auto ml-auto mr-auto">
                   
                   <img
                     src={Neumobot}
                     className="img-responsive  neumobot d-block mt-5 mb-5"
                   />
+                    
+                  
+                 
                 </div>
                 <div className="col-md-6">
                   <form className="form text-aling-center">
@@ -134,7 +137,7 @@ class formulario extends React.Component {
                                             <div className=" container form-group">
                                               <div className="">
                                                 <label
-                                                  className="text-white  text-left col-6 label"
+                                                  className="text-white  text-left label"
                                                   for="validationCustom01"
                                                 >
                                                   {v.nombre}:
