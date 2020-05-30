@@ -8,17 +8,17 @@ import Neumobot from "../img/Neumobot.png";
 class formulario extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { secciones: [], variables: [], variable8: [] };
+    this.state = { secciones: [], variables: [], variable8: [] }; //estados iniciales.
   }
   componentDidMount() {
     fetch(
-      "https://formularios-prueba-tecnica-6ihrk4y23q-ue.a.run.app/formularios/api/v3/prueba_tecnica"
+      "https://formularios-prueba-tecnica-6ihrk4y23q-ue.a.run.app/formularios/api/v3/prueba_tecnica" //petición de la api
     )
-      .then((response) => {
-        return response.json();
+      .then((response) => { //nos retorna promesa
+        return response.json(); 
       })
-      .then((datos) => {
-        this.setState({
+      .then((datos) => { 
+        this.setState({//le asignamos un nuevo estado con los  objetos que que necesitamos.
           secciones: datos.data.data.seccion,
           variables: datos.data.data.variable,
           variable8: datos.data.data.variable.variable4.opciones_lista,
@@ -27,9 +27,9 @@ class formulario extends React.Component {
   }
 
   render() {
-    const secc = Object.values(this.state.secciones);
-    const varia = Object.values(this.state.variables);
-    const varia8 = Object.values(this.state.variable8);
+    const secc = Object.values(this.state.secciones); //le asignamos un nuevo objeto de secciones con el estado
+    const varia = Object.values(this.state.variables);//le asignamos un nuevo objeto de variables con el estado
+    const varia8 = Object.values(this.state.variable8); //le asigamos un nuevo objeto  a los datos de la clasificación
 
     secc.sort(function (prev, next) {
       //estamos ordenando el array de las secciones
