@@ -1,0 +1,151 @@
+.wbb{
+
+    height: 100vh;
+    width: 100vw;
+
+}
+
+body{
+
+    height: 100vh;
+    width: 100vw;
+    font-family: Graphik,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+}
+
+.logo-oficial{
+    width: 100px;
+}
+
+
+.imagen1{
+border-radius: 200px 40px 200px 40px;
+}
+
+.formulario:hover{
+color: rgb(0, 89, 255);
+}
+.letra{
+
+    font-family: Graphik,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+    
+}
+.letra-titulo{
+    font-family: Graphik,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+    text-decoration: 0px;
+   
+    
+}
+.letra-titulo:hover{
+    font-family: Graphik,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+    text-decoration: 0px;
+    
+
+    
+}
+
+.letra-parrafo{
+    font-family: Graphik,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.hr{
+background-color: #366b82;
+height: 2px;
+}
+.hrform{
+    background-color: #366b82;
+    height: 2px;
+    }
+
+.seccion{
+
+   
+    background-color:#2A2D30
+}
+.margin{
+    margin-left:100px;
+}
+
+.footer{
+
+    background-color: #3A899A;
+}
+
+.titulos{
+    color: #3A899A;
+    font-size: 25px;
+    text-decoration: none;
+}
+.footer{
+    margin-top: 80px;
+    
+
+}
+.neumobot{
+    width: 250px;
+    height: 250x;
+}
+
+.formulario-color{
+ background-color: #3A899A;
+
+}
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+.hrform{
+    background-color: rgb(66, 156, 177);
+    font-family: Graphik,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+
+}
+
+li{
+    font-size: 20px;
+    font-family: Graphik,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+    color: #404248;
+
+
+}
+
+.gmaps {
+    position: relative;
+    padding-bottom: 35%;
+    height: 0;
+    overflow: hidden;
+    width: 100% !important;
+    height: 120% !important;
+    margin-top: 15px;
+}
+.gmaps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.headertext{
+    font-weight: 600;
+}
+
+.headertext:hover{
+    font-weight: 600;
+    color: blue;
+}
