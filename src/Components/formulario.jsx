@@ -85,7 +85,7 @@ class formulario extends React.Component {
 
  <div className="col-12 col-md-6 col-sm-12 ">
 
-<img src={Neumobot} className="img-responsive  neumobot d-block mt-5 mb-5 imagen1"/>
+<img src={Neumobot} className="img-responsive  neumobot d-block mt-5 mb-5"/>
 </div>
 <div className="col-12 col-md-6 col-sm-12  mt-auto mb-auto ">
 
