@@ -28,9 +28,11 @@ Edificio Salud y Servicios.</p>
   </div>
 
 </div>
-<p className="text-center footer text-white"><a href="https://neumomed.com/#/"/>Neumomed | Todos los derechos reservados 2020</p>
+<p className="text-center footer text-white"><a href="https://neumomed.com/#/"/>Neumomed | Todos los derechos reservados © 2020</p>
 
-
+<a href="https://api.whatsapp.com/send?phone=573508872241&text=Hola%20Neumomed%2C%20quiero%20pedir%20una%20cita." class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    </a> 
 </footer>
 
 

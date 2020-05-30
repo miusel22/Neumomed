@@ -90,10 +90,10 @@ class formulario extends React.Component {
 <div className="col-12 col-md-6 col-sm-12  mt-auto mb-auto ">
 
 <h3 className="text-info">Diligencia el formulario y obtén tu valoración.</h3>
-</div>
-</div>
 
-      </div>
+
+
+      
     
       
      
@@ -142,19 +142,19 @@ class formulario extends React.Component {
                           <div>
                          
                             {v.seccion == e.valor && v.nombre!="Clasificación" ? (
-                              <div class=" container text-center form-group">
-                                <div className="ml-auto mr-auto col-md-6">
+                              <div class=" container form-group">
+                                <div className="ml-auto mr-auto col-md-7">
                                   <label
-                                    className="text-white col-4"
+                                    className="text-white col-4 col-md-8 text-left mr-10 label"
                                     for="validationCustom01"
                                   >
-                                    {v.nombre}
+                                    {v.nombre}:
                                   </label>
                                   <input
-                                    className="text-align-center text-center"
+                                    className="text-align-center col-md-1"
                                     type="numero"
                                     name="nombres"
-                                    placeholder={"Ingresa " + v.nombre}
+                                    placeholder={"Ingresa " + v.nombre+"..."}
                                     onChange={this.handleChange}
                                     className="form-control "
                                     value={this.state.nombres}
@@ -170,14 +170,14 @@ class formulario extends React.Component {
                              {
                             v.seccion == e.valor && v.nombre=="Clasificación"?(
                               <>
-                              <div className="ml-auto mr-auto col-md-6">
+                              <div className="ml-auto mr-auto col-md-8">
                               <label
                                     className="text-white mx-sm-1"
                                     for="validationCustom01"
                                   >
                                     {v.nombre}
                                   </label>
-                              <select class="form-control sm" id="exampleFormControlSelect1">
+                              <select class="form-control sm label" id="exampleFormControlSelect1">
                               <option>Elige una clasificación</option>
                                 {
                                  varia8.map((e,i) =>(
@@ -237,6 +237,9 @@ class formulario extends React.Component {
                         </button>
                       </div>
       </form>
+      </div>
+      </div>
+      </div>
       <Footer/>
       </>
     );
