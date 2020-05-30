@@ -75,6 +75,7 @@ class formulario extends React.Component {
     return (
       <>
       <Header></Header>
+      <div className="container-fluid ml-auto mr-auto text-align-center vh-100%">
       <div className="container-fluid text-center bg-info">
         <h3 className="text-white bg-info">VALORACIÓN</h3>
         <hr className="bg-info"></hr>
@@ -243,6 +244,7 @@ class formulario extends React.Component {
       </div>
       </div>
       </div>
+      </div>
       <Footer/>
       </>
     );
@@ -253,6 +255,7 @@ class formulario extends React.Component {
     <h3 className="text-info">Cargando Formulario, por favor espera...</h3>
   <img className="neumobot img-responsive mg-fluid" alt="Responsive image" src={NeumobotFeliz}></img>
     </div>
+    
     <Footer/>
     </>
   }
