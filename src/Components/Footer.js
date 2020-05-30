@@ -11,7 +11,7 @@ function Footer() {
           <div className="col-12 col-md-3 col-sm-12  footer footerspace">
             <h2 className="text-white">Medellín</h2>
             <p className="text-white">Calle 19A # 44-25 Local 206
-Edificio Salud y Servicios.</p>
+            Edificio Salud y Servicios.</p>
           </div>
           <div className="col-12 col-md-3 col-sm-12 footer">
             <h2 className="text-white">Rionegro</h2>
