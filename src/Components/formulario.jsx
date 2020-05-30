@@ -148,7 +148,7 @@ class formulario extends React.Component {
                               <div class=" container form-group">
                                 <div className="ml-auto mr-auto ">
                                   <label
-                                    className="text-white col-4 col-md-8 col-sm-8 text-left  label"
+                                    className="text-white col-8 col-md-8 col-sm-8 text-left  label"
                                     for="validationCustom01"
                                   >
                                     {v.nombre}:
