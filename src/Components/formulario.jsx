@@ -203,8 +203,8 @@ class formulario extends React.Component {
                     </div>
                     <br></br>
                     <div className="container text-center">
-                      <button type="button" className="btn boton btn-dark">
-                        Obtener Valoración
+                      <button type="button" className="btn btn-lg  boton btn-dark">
+                        Obtener valoración
                       </button>
                     </div>
                   </form>
