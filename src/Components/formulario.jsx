@@ -11,16 +11,17 @@ class formulario extends React.Component {
     this.state = { secciones: [], variables: [], variable8: [] }; //estados iniciales.
   }
 
-
   componentDidMount() {
     fetch(
       "https://formularios-prueba-tecnica-6ihrk4y23q-ue.a.run.app/formularios/api/v3/prueba_tecnica" //petición de la api
     )
-      .then((response) => { //nos retorna promesa
-        return response.json(); 
+      .then((response) => {
+        //nos retorna promesa
+        return response.json();
       })
-      .then((datos) => { 
-        this.setState({//le asignamos un nuevo estado con los  objetos que que necesitamos.
+      .then((datos) => {
+        this.setState({
+          //le asignamos un nuevo estado con los  objetos que que necesitamos.
           secciones: datos.data.data.seccion,
           variables: datos.data.data.variable,
           variable8: datos.data.data.variable.variable4.opciones_lista,
@@ -28,11 +29,9 @@ class formulario extends React.Component {
       });
   }
 
-
-
   render() {
     const secc = Object.values(this.state.secciones); //le asignamos un nuevo objeto de secciones con el estado
-    const varia = Object.values(this.state.variables);//le asignamos un nuevo objeto de variables con el estado
+    const varia = Object.values(this.state.variables); //le asignamos un nuevo objeto de variables con el estado
     const varia8 = Object.values(this.state.variable8); //le asigamos un nuevo objeto  a los datos de la clasificación
 
     secc.sort(function (prev, next) {
@@ -59,14 +58,16 @@ class formulario extends React.Component {
       return prev.seccion - next.seccion;
     });
 
-    if (secc.length > 0) { //ternario que nos valida si ya han cargado los datos de la api,en caso de que ya hayan datos,me pinta la información
+    if (secc.length > 0) {
+      //ternario que nos valida si ya han cargado los datos de la api,en caso de que ya hayan datos,me pinta la información
       return (
         <>
           <Header></Header>
           <div className="container-fluid ml-auto mr-auto text-align-center vh-100%">
             <div className="container-fluid text-center bg-info">
-              <h3 className="text-white bg-info mt-3">VALORACIÓN</h3>
-              <hr className="bg-info"></hr>
+              <h3 className="text-white bg-infomt-3 mt-2 valoracion">
+                VALORACIÓN
+              </h3>
             </div>
             <h3 className="text-info text-center mt-5">
               Diligencia el formulario y obtén tu valoración.
@@ -83,10 +84,13 @@ class formulario extends React.Component {
                 <div className="col-12 col-md-6 col-sm-12  mt-auto mb-auto ">
                   <form className="form text-aling-center">
                     <div className="form-row ">
-                      {secc.map((e, i) => ( //estamos pintando todas las secciones
+                      {secc.map((
+                        e,
+                        i //estamos pintando todas las secciones
+                      ) => (
                         <>
                           <div className="container  text-center bg-info">
-                            <h4 key={i}></h4> 
+                            <h4 key={i}></h4>
 
                             <div
                               class="panel-group"
@@ -117,12 +121,15 @@ class formulario extends React.Component {
                                   aria-labelledby="heading"
                                 >
                                   <div class="panel-body align-item-center">
-                                    {varia.map((v, i) => ( //pintamos las variables en los correspondientes bloques.
+                                    {varia.map((
+                                      v,
+                                      i //pintamos las variables en los correspondientes bloques.
+                                    ) => (
                                       <div>
                                         <h4 key={i}></h4>
 
                                         <div>
-                                          {v.seccion == e.valor && 
+                                          {v.seccion == e.valor &&
                                           v.nombre != "Clasificación" ? ( //condición que nos ayuda a validar que se pinten solo las variables que corresponden a la sección,como con la variable clasificación pasa algo especial,la dejamos para pintar después
                                             <div class=" container form-group">
                                               <div className="ml-auto mr-auto ">
@@ -168,7 +175,10 @@ class formulario extends React.Component {
                                                   <option>
                                                     Elige una clasificación
                                                   </option>
-                                                  {varia8.map((e, i) => ( //pintamos el objeto que está en clasificacion para convertirlo en una lista.
+                                                  {varia8.map((
+                                                    e,
+                                                    i //pintamos el objeto que está en clasificacion para convertirlo en una lista.
+                                                  ) => (
                                                     <>
                                                       <option>{e.valor}</option>
                                                     </>
@@ -194,7 +204,10 @@ class formulario extends React.Component {
                     </div>
                     <br></br>
                     <div className="container text-center">
-                      <button type="button" class="btn form- control btn-success">
+                      <button
+                        type="button"
+                        class="btn form- control btn-success"
+                      >
                         Obtener Valoración
                       </button>
                       <p className="text-info" id="mensaje"></p>
@@ -204,13 +217,14 @@ class formulario extends React.Component {
               </div>
             </div>
           </div>
-          <Footer/>
+          <Footer />
         </>
       );
-    } else { //en caso de que no hayan cargado los datos,me muestra un loading 
+    } else {
+      //en caso de que no hayan cargado los datos,me muestra un loading
       return (
         <>
-          <Header/>
+          <Header />
           <div className="container  text-center mt-10">
             <h3 className="text-info">
               Cargando Formulario, por favor espera...
@@ -222,7 +236,7 @@ class formulario extends React.Component {
             ></img>
           </div>
 
-          <Footer/>
+          <Footer />
         </>
       );
     }

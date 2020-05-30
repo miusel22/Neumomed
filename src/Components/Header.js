@@ -29,11 +29,11 @@ function Header() {
                   <nav class="my-2 my-md-0 mr-md-3">
 
                     <Link to="/" style={{ paddingLeft: 13, textDecoration: 'none' }}>
-                      <p class="p-2 text-info headertext" >INICIO</p></Link>
+                      <p class="p-2  headertext" >INICIO</p></Link>
                   </nav>
                   <div class="my-2 my-md-0 mr-md-3 letra-titulo quitar">
 
-                    <Link to="/formulario" style={{ paddingLeft: 13, textDecoration: 'none' }}><p class="p-2 text-info headertext" >VALORACIÓN</p></Link>
+                    <Link to="/formulario" style={{ paddingLeft: 13, textDecoration: 'none' }}><p class="p-2  headertext" >VALORACIÓN</p></Link>
 
 
                   </div>
