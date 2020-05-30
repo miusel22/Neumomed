@@ -19,7 +19,7 @@ function info() {
     <hr className="hr"></hr>
 <h6 className="letra">NEUMOMED</h6>
 <h1 className="letra-titulo">Neumomed IPS</h1>
-<h3 className="letra-parrafo">ofrece una atención integral a pacientes con enfermedades respiratorias y trastornos del sueño.</h3>
+<h3 className="letra-parrafo">Ofrece una atención integral a pacientes con enfermedades respiratorias y trastornos del sueño.</h3>
 </div>
 <div className="col-12 col-md-5 col-sm-12 text-center mr-auto">
 

@@ -14,8 +14,10 @@ function Header() {
 <div class="container-{breakpoint}  justify-content-center">
     <nav class="navbar navbar-inverse  navbar-light navbar-expand-lg navbar-ligth bg-white justify-content-between">
     <a class="my-0 mr-md-auto font-weight-normal ml-5">
-  <img className="img-fluid logo-oficial ml-5" src={LogoOficial}>
-</img></a>
+    <Link to="/">
+  <img className="img-fluid logo-oficial ml-5" src={LogoOficial}></img>
+  </Link>
+</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon navbar-light">
             </span>
@@ -31,7 +33,7 @@ function Header() {
  </nav>
  <div class="my-2 my-md-0 mr-md-3 letra-titulo quitar">
   
-  <Link className="quitar" to="/formulario"style={{paddingLeft: 13, textDecoration: 'none'}}><p class="p-2 text-info headertext" >VALORACIÓN</p></Link>
+  <Link to="/formulario"style={{paddingLeft: 13, textDecoration: 'none'}}><p class="p-2 text-info headertext" >VALORACIÓN</p></Link>
 
 
 </div> 
