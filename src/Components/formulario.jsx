@@ -130,29 +130,28 @@ class formulario extends React.Component {
                                         <div>
                                           {v.seccion == e.valor &&
                                           v.nombre != "Clasificación" ? ( //condición que nos ayuda a validar que se pinten solo las variables que corresponden a la sección,como con la variable clasificación pasa algo especial,la dejamos para pintar después
-                                            <div className=" container form-group">
-                                              <div className="">
+                                            <div className="container">
+                                              
                                                 <p
-                                                  className="text-white  text-left "
+                                                  className="text-white text-left "
                                                   for="validationCustom01"
                                                 >
                                                   {v.nombre}:
                                                 </p>
                                                 <input
-                                                  className="text-align-center col-md-6 col-sm-6"
-                                                  type="numero"
+                                                  className="col-md-6 col-sm-6"
+                                                  type="text"
                                                   name="nombres"
                                                   placeholder={
                                                     "Ingresa " +
                                                     v.nombre +
                                                     "..."
                                                   }
-                                                  className="form-control "
-                                                  value=""
-                                                  id="validationCustom01"
+                                                  className="form-control"
+                                                
                                                   required
                                                 ></input>
-                                              </div>
+                                              
                                             </div>
                                           ) : (
                                             ""
